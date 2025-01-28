@@ -1,16 +1,8 @@
-# Astro Starter Kit: Basics
+# Vibra Pixel: Docs
 
 ```sh
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+npm run dev
+``` 
 
 ## 🚀 Project Structure
 
@@ -21,14 +13,17 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+├   ├── assets/
+│       └── icons/
+│           └── sun.astro
 │   ├── layouts/
 │   │   └── Layout.astro
+├   ├─  components/
+│   │   └── navbar.astro
 │   └── pages/
 │       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -45,4 +40,22 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## INTRO
+> Created to make a welcome to users 
+```html
+<div id="container">
+	<main>
+		<div class="intro">
+			<div class="title">
+				<h1>En cada pixel</h1>
+				<h2>hay una vibrante historia</h2>
+			</div>
+			<div class="sun">
+				<Sun />
+			</div>
+		</div>
+	</main>
+</div>
+```
+Inside Intro component is found the first-look to website, where the sun, that is a svg-astro component that can be modified through props is the main element of it and a short slogan is shown inside of it. 
+
