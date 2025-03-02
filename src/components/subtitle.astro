@@ -1,0 +1,19 @@
+---
+const { subtitle } = Astro.props;
+---
+
+<section class="subtitle">
+    <h2>{subtitle}</h2>
+</section>
+
+<style>
+    .subtitle {
+        padding: 2rem;
+        font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+            "Nimbus Sans", Arial, sans-serif;
+    }
+    .subtitle h2 {
+        font-size: 2rem;
+        color: #040f20;
+    }
+</style>

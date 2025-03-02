@@ -1,0 +1,22 @@
+---
+const { title, class: customClass } = Astro.props;
+---
+
+<div class={`highcard ${customClass}`}>
+    <h2>{title}</h2>
+</div>
+
+<style>
+    .highcard {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        height: 100%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+        "Nimbus Sans", Arial, sans-serif;
+    }
+    .centered-card{
+        height: 90%;
+    }
+</style>

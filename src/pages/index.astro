@@ -5,6 +5,9 @@ import Leftcard from "../components/leftcard.astro";
 import Paragraph from "../components/paragraph.astro";
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import Highcard from "../components/highcard.astro";
+import Subtitle from "../components/subtitle.astro";
+import Ourservices from "../components/ourservices.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,7 +16,13 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
 	<Navbar />
 	<Welcome />
-	<Rightcard title="Conócenos"/>
-	<Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."/>
-	<Leftcard title="Nuestros servicios"/>
+	<Rightcard title="Conócenos" />
+	<Paragraph
+		text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+	/>
+	<Leftcard title="Nuestros servicios" />
+
+	<section class="our-services">
+		<Ourservices/>
+	</section>
 </Layout>
