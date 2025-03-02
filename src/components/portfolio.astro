@@ -1,0 +1,55 @@
+---
+import Highcard from "./highcard.astro";
+---
+
+<div class="portfolio">
+    <div class="img1">
+        <Highcard title="imagen" />
+    </div>
+    <div class="img2">
+        <Highcard class="centered-card-top" title="imagen 2" />
+    </div>
+    <div class="img3">
+        <Highcard title="imagen " />
+    </div>
+    <div class="moreinfo">
+        <Highcard title="Saber más" />
+    </div>
+</div>
+
+<style>
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+    }
+
+    .img1 {
+        grid-row: span 4 / span 4;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        height: 100%;
+    }
+
+    .img2 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        height: 100%;
+    }
+
+    .img3 {
+        grid-row: span 4 / span 4;
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+    .moreinfo {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 70%;
+    }
+</style>
