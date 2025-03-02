@@ -1,0 +1,75 @@
+---
+import Yellow from "../assets/icons/yellow.astro";
+import Leftcard from "./leftcard.astro";
+import Paragraph from "./paragraph.astro";
+import Socialcard from "./socialcard.astro";
+import Whatsappicon from "../assets/icons/whatsappicon.astro";
+import FacebookIcon from "../assets/icons/facebookicon.astro";
+import Pink from "../assets/icons/pink.astro";
+import Orange from "../assets/icons/orange.astro";
+---
+
+<section class="contact">
+    <Leftcard title="Contacto" bgColor="#EEA503" />
+    <Paragraph
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    />
+    <div class="socialmedia">
+        <!-- WhatsApp -->
+        <div class="social-wrapper">
+            <Yellow class="bg bg-up" />
+            <Socialcard name="Whatsapp" class="wpp" icon={Whatsappicon} />
+        </div>
+
+        <!-- Facebook -->
+        <div class="social-wrapper">
+            <Orange class="bg bg-down" />
+            <Socialcard name="Facebook" icon={FacebookIcon} />
+        </div>
+
+        <!-- Instagram -->
+        <div class="social-wrapper">
+            <Pink class="bg bg-up" />
+            <Socialcard name="Instagram" />
+        </div>
+    </div>
+</section>
+<style>
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    /* Wrapper for each card + background */
+    .social-wrapper {
+        position: relative; /* Ensure stacking works properly */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Background blocks */
+    .bg {
+        position: absolute;
+        height: 90px;
+        border-radius: 8px;
+        z-index: 1; /* Behind the card */
+    }
+
+    /* Adjust positions */
+    .bg-up {
+        top: -60px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .bg-down {
+        bottom: -60px;
+        width: 300px;
+        height: 100px;
+    }
+</style>

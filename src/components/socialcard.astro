@@ -1,0 +1,35 @@
+---
+const { name, icon: Icon } = Astro.props;
+---
+
+<section>
+    <div class="card">
+        <div class="name">
+            <h3>{name}</h3>
+        </div>
+        <div class="icon">
+            {Icon && <Icon />}
+        </div>
+    </div>
+</section>
+
+<style>
+   .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+        "Nimbus Sans", Arial, sans-serif;
+    position: relative;
+    z-index: 5; /* Ensures the card is above the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+</style>

@@ -1,27 +1,27 @@
 ---
-const { title } = Astro.props;
+const { title, bgColor = "#040f20" } = Astro.props;
 ---
 
 <section class="card">
-    <div class="background-card"></div>
+    <div class="background-card" style={`background-color: ${bgColor};`}></div>
     <div class="white">
         <h2>{title}</h2>
     </div>
 </section>
 
-<style> 
-.card{
-    position: relative; 
-    display: inline-block;
-    padding: 2rem;
-}
+<style>
+    .card {
+        position: relative;
+        display: inline-block;
+        padding: 2rem;
+    }
     .background-card {
-        position: absolute; 
+        position: absolute;
         width: 200px;
         height: 120px;
         background-color: #040f20;
-        top: 5px; 
-        right: 5px; 
+        top: 5px;
+        right: 5px;
         border-style: 8px;
         z-index: 1;
     }
@@ -31,11 +31,11 @@ const { title } = Astro.props;
         background-color: white;
         padding: 1rem;
         z-index: 2;
-        box-shadow: 2px 2px 2px 10px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
     .white h2 {
         color: #040f20;
         font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
-        "Nimbus Sans", Arial, sans-serif
+            "Nimbus Sans", Arial, sans-serif;
     }
 </style>
