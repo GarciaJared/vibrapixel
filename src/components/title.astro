@@ -1,0 +1,21 @@
+---
+const { componentTitle } = Astro.props;
+---
+
+<section class="square-wrapper">
+    <div class="background"></div>
+    <div class="wrapper">
+        <h2 class="title">
+            {componentTitle}
+        </h2>
+    </div>
+</section>
+
+<style>
+    .background {
+        background-color: #e2014e;
+    }
+    .title{
+        color: azure;
+    }
+</style>

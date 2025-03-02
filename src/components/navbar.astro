@@ -1,0 +1,45 @@
+---
+import Circles from "../assets/icons/circles.astro";
+---
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <div class="circle"><Circles /></div>
+            <li><a href="/about">Servicios</a></li>
+            <li><a href="/blog">Equipo</a></li>
+            <li><a href="/blog">Contacto</a></li>
+        </ul>
+    </nav>
+</section>
+<style>
+    nav {
+        background-color: #040f20;
+        color: white;
+        padding: 1rem;
+        font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+			"Nimbus Sans", Arial, sans-serif;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 959px){
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+</style>

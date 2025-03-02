@@ -1,0 +1,23 @@
+---
+const { text } = Astro.props;
+---
+
+<section class="paragraph">
+    <p>
+        {text}
+    </p>
+</section>
+
+<style>
+
+.paragraph {
+    padding: 2rem;
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+        "Nimbus Sans", Arial, sans-serif;
+}
+.paragraph p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+</style>
