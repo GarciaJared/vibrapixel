@@ -8,6 +8,7 @@ import Layout from "../layouts/Layout.astro";
 import Ourservices from "../components/ourservices.astro";
 import Portfolio from "../components/portfolio.astro";
 import Contact from "../components/contact.astro";
+import Verticalcircules from "../assets/icons/Verticalcircules.astro";
 ---
 
 <Layout>
@@ -37,6 +38,10 @@ import Contact from "../components/contact.astro";
 	<section class="contact">
 		<Contact />
 	</section>
+
+	<section class="circules">
+		<Verticalcircules />
+	</section>
 </Layout>
 
 <style>
@@ -47,6 +52,12 @@ import Contact from "../components/contact.astro";
 	.portfolio {
 		position: relative;
 		padding: 2rem;
+	}
+	.circules{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 9rem;
 	}
 	:global(:root) {
 		--primary-color: #040f20;
